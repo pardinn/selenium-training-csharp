@@ -9,33 +9,47 @@ namespace Section7
     class Employee
     {
         // private variables internal for the classes
-        long employeeNumber;
+        long employeeID;
         string firstName;
         string lastName;
         DateTime dateOfHire;
         string department;
-        string jobDescription;
+        string jobTitle;
         double monthlySalary;
 
         // constructors
-        public Employee(string empFirstName, string empLastName)
+        public Employee(int empID)
+        {
+            EmployeeID = empID;
+        }
+
+        public Employee(string empFirstName, string empLastName, string title)
         {
             FirstName = empFirstName;
             LastName = empLastName;
+            JobTitle = title;
         }
 
-        public Employee(long empNo, string empFirstName, string empLastName, DateTime hireDate, string dept, string job, double salary)
+        public Employee(long empID, string empFirstName, string empLastName, DateTime hireDate, string dept, string title, double salary)
         {
-            EmployeeNumber = empNo;
+            EmployeeID = empID;
             FirstName = empFirstName;
             LastName = empLastName;
             DateOfHire = hireDate;
-            JobDescription = job;
+            JobTitle = title;
             MonthlySalary = salary;
         }
 
+        public Employee(string empFirstName, string empLastName, long empId, string title)
+        {
+            FirstName = empFirstName;
+            LastName = empLastName;
+            EmployeeID = empId;
+            JobTitle = title;
+        }
+
         //properties
-        public long EmployeeNumber { get; set; }
+        public long EmployeeID { get; set; }
         public string FirstName
         {
             get { return firstName; }
@@ -69,7 +83,7 @@ namespace Section7
 
         public DateTime DateOfHire { get; set; }
         public string Department { get; set; }
-        public string JobDescription { get; set; }
+        public string JobTitle { get; set; }
         public double MonthlySalary { get; set; }
 
         // methods  
@@ -81,6 +95,25 @@ namespace Section7
         public string GetFormalName()
         {
             return $"{LastName}, {FirstName}";
+        }
+
+        public string JobLocation()
+        {
+            if(JobTitle == "Manager")
+            {
+                return "Boston";
+            }
+            else if (JobTitle == "Staff")
+            {
+                return "Chicago";
+            }
+
+            return "New York";
+        }
+
+        public override string ToString()
+        {
+            return EmployeeID + ": " + GetFullName() + " Job Title: " + JobTitle;
         }
     }
 

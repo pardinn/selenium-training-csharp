@@ -16,8 +16,26 @@ namespace Section7
         [TestMethod]
         public void Class_Employee_Formal_Name()
         {
-            Employee employee = new Employee("Natalia", "Smirnova");
+            Employee employee = new Employee("Natalia", "Smirnova", "Writer");
             Assert.AreEqual("Smirnova, Natalia", employee.GetFormalName());
+        }
+
+        [TestMethod]
+        public void Test_Employee_ID_Set()
+        {
+            Employee employee1 = new Employee(123);
+
+            employee1.JobTitle = "Manager";
+
+            string jobLocation = employee1.JobLocation();
+            Assert.AreEqual("Boston", jobLocation);
+        }
+
+        [TestMethod]
+        public void To_String_Test()
+        {
+            Employee employee1 = new Employee("Victor", "Moraes", 12345, "QA");
+            Console.WriteLine(employee1);
         }
     }
 }
