@@ -26,26 +26,26 @@ namespace Repetition
             //two variables initialized
             for (int counter = 0, val1 = 10; counter < val1; counter++)
             {
-
+                break;
             }
 
             //Initialization not included as part of for statement
             int count2 = 0;
             for (; count2 < 100; count2 += 10)
             {
-
+                break;
             }
 
             //No conditional expression included
             for (int j = 0; ; j++)
             {
-
+                break;
             }
 
             //Use of floating point variables is permissible
             for (double d = 15.0; d < 20.0; d += 0.5)
             {
-
+                break;
             }
         }
 
