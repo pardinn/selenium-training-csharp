@@ -18,14 +18,19 @@ namespace AdvancedOOTopics
             this.studentId = studentId;
         }
 
-        public override string GetExerciseHabits()
-        {
-            return "Zero time to exercise";
-        }
+        //public override string GetExerciseHabits()
+        //{
+        //    return "Zero time to exercise";
+        //}
 
         public DateTime GetDOB()
         {
-            return base.dateOfBirth;
+            return base.dateOfBirth;  
+        }
+
+        public override string HoursOfSleep()
+        {
+            return "A student has 6 hours of sleep";
         }
     }
 }

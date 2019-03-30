@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AdvancedOOTopics
 {
-    abstract class Person
+    class Person
     {
         private string idNumber;
         private string lastName;
@@ -23,6 +23,11 @@ namespace AdvancedOOTopics
             this.dateOfBirth = dateOfBirth;
         }
 
-        public abstract string GetExerciseHabits();
+        //public abstract string GetExerciseHabits();
+
+        public virtual string HoursOfSleep()
+        {
+            return "A person has 8 hours of sleep";
+        }
     }
 }
