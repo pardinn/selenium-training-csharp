@@ -45,6 +45,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section11", "Section11", "{
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArraysAndLists", "ArraysAndLists\ArraysAndLists.csproj", "{F9EC5878-E9FB-4312-AE86-6A5D73B6C87E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodingQuizP1", "CodingQuizP1\CodingQuizP1.csproj", "{E41658D8-2377-4E5C-AC18-9B703EA38B74}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -99,6 +101,10 @@ Global
 		{F9EC5878-E9FB-4312-AE86-6A5D73B6C87E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9EC5878-E9FB-4312-AE86-6A5D73B6C87E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9EC5878-E9FB-4312-AE86-6A5D73B6C87E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E41658D8-2377-4E5C-AC18-9B703EA38B74}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E41658D8-2377-4E5C-AC18-9B703EA38B74}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E41658D8-2377-4E5C-AC18-9B703EA38B74}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E41658D8-2377-4E5C-AC18-9B703EA38B74}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -116,6 +122,7 @@ Global
 		{9427BE4D-92B3-4337-9B4C-478C8204FC58} = {DFEB127C-2B82-4F1B-9F18-D31BDD446D16}
 		{155B99FC-7ADF-4FE2-8230-0C43E89CD63B} = {76E3E3DD-334E-4C12-BA79-23F7F7C99143}
 		{F9EC5878-E9FB-4312-AE86-6A5D73B6C87E} = {ADC3F422-69BC-4430-982D-F2F199F05420}
+		{E41658D8-2377-4E5C-AC18-9B703EA38B74} = {ADC3F422-69BC-4430-982D-F2F199F05420}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA7B83FC-725F-44E5-82BD-FE232C6AB915}
