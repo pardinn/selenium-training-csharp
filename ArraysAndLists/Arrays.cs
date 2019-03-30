@@ -49,5 +49,27 @@ namespace ArraysAndLists
             }
             return sum;
         }
+
+        [TestMethod]
+        public void Pass_Array_Element()
+        {
+            int[] scores = { 2, 4, 6, 8, 10 };
+            foreach (int score in scores)
+            {
+                Console.WriteLine(CheckScore(score));
+            }
+        }
+
+        private string CheckScore(int score)
+        {
+            if (score>=10)
+            {
+                return "Pass";
+            }
+            else
+            {
+                return "Fail";
+            }
+        }
     }
 }
