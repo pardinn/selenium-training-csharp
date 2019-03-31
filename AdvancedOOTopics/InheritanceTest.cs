@@ -50,5 +50,11 @@ namespace AdvancedOOTopics
                 Console.WriteLine(p.HoursOfSleep());
             }
         }
+
+        [TestMethod]
+        public void Test_Sealed()
+        {
+            SealedPen myPen = new SealedPen("ball point");
+        }
     }
 }

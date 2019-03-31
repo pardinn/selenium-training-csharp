@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{2D4C4086-4970-4337-BF40-377BB91EF908}</ProjectGuid>
+    <ProjectGuid>{0206315C-6968-41C7-8145-C5966A55759F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>AdvancedOOTopics</RootNamespace>
-    <AssemblyName>AdvancedOOTopics</AssemblyName>
+    <RootNamespace>LoanProgram</RootNamespace>
+    <AssemblyName>LoanProgram</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -49,16 +49,11 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Lecture.cs" />
-    <Compile Include="Musical.cs" />
-    <Compile Include="Person.cs" />
-    <Compile Include="Play.cs" />
-    <Compile Include="SealedPen.cs" />
-    <Compile Include="Student.cs" />
-    <Compile Include="InheritanceTest.cs" />
+    <Compile Include="AutoLoan.cs" />
+    <Compile Include="HomeLoan.cs" />
+    <Compile Include="Loan.cs" />
+    <Compile Include="LoanTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="TicketReservation.cs" />
-    <Compile Include="TicketReservationTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
