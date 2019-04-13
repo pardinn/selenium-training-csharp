@@ -8,8 +8,8 @@ namespace Interface
 {
     class Student : Person, ITraveler
     {
-        public Student(string idNumber, string lastName, string firstName, int age, string major, string studentId, DateTime dateOfBirth)
-            : base(idNumber, lastName, firstName, age, dateOfBirth)
+        public Student(string idNumber, string lastName, string firstName, string major, string studentId)
+            : base(idNumber, lastName, firstName)
         {
             Major = major;
             StudentId = studentId;
@@ -31,6 +31,14 @@ namespace Interface
         public double DetermineMiles()
         {
             return 75.0;
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() +
+                "\n  Destination: " + GetDestination() +
+                "\n  Start Location: " + GetStartLocation() +
+                "\n  Miles: " + DetermineMiles();
         }
     }
 }

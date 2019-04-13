@@ -8,19 +8,21 @@ namespace Interface
 {
     abstract class Person
     {
-        private string idNumber;
-        private string lastName;
-        private string firstName;
-        private int age;
-        protected DateTime dateOfBirth;
-
-        public Person(string idNumber, string lastName, string firstName, int age, DateTime dateOfBirth)
+        public Person(string idNumber, string lastName, string firstName)
         {
-            this.idNumber = idNumber;
-            this.lastName = lastName;
-            this.firstName = firstName;
-            this.age = age;
-            this.dateOfBirth = dateOfBirth;
+            IdNumber = idNumber;
+            LastName = lastName;
+            FirstName = firstName;
+        }
+
+        public string IdNumber { get; set; }
+        public string LastName { get; set; }
+        public string FirstName { get; set; }
+
+        public override string ToString()
+        {
+            return "First Name: " + FirstName + "\n" +
+                "Last Name: " + LastName;
         }
     }
 }
