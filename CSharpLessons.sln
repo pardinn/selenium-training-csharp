@@ -65,6 +65,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ExceptionHandling", "Except
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SectionExam", "SectionExam\SectionExam.csproj", "{63B10B5A-25C0-4108-BE48-0D1C6A54E8CD}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Section15", "Section15", "{BFAD0F7D-04D5-477C-AE17-79036D453F43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AdvancedCSharp", "AdvancedCSharp\AdvancedCSharp.csproj", "{AFA8BA6E-DE0E-4BDD-BD78-A50E5D3AEDFB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,10 @@ Global
 		{63B10B5A-25C0-4108-BE48-0D1C6A54E8CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{63B10B5A-25C0-4108-BE48-0D1C6A54E8CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{63B10B5A-25C0-4108-BE48-0D1C6A54E8CD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AFA8BA6E-DE0E-4BDD-BD78-A50E5D3AEDFB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AFA8BA6E-DE0E-4BDD-BD78-A50E5D3AEDFB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AFA8BA6E-DE0E-4BDD-BD78-A50E5D3AEDFB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AFA8BA6E-DE0E-4BDD-BD78-A50E5D3AEDFB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -171,6 +179,7 @@ Global
 		{50F5312D-A4EF-41B6-A3D4-CA3A64E563D5} = {8D9C4050-4B61-40BF-B088-6ADD281F1022}
 		{12CDAB5A-0406-461E-B566-15E7C8B56A70} = {59F96F22-913B-437C-9A2C-8A7953E42AD3}
 		{63B10B5A-25C0-4108-BE48-0D1C6A54E8CD} = {59F96F22-913B-437C-9A2C-8A7953E42AD3}
+		{AFA8BA6E-DE0E-4BDD-BD78-A50E5D3AEDFB} = {BFAD0F7D-04D5-477C-AE17-79036D453F43}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {FA7B83FC-725F-44E5-82BD-FE232C6AB915}
